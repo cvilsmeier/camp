@@ -8,7 +8,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - name: checkout
+      uses: actions/checkout@v2
     - name: compile
       run: |
         echo "build start"
@@ -18,3 +19,9 @@ jobs:
         ./build.sh
         ./bin/camp
         echo "build end"
+    - name: Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: assets-for-download
+        path: bin
+
