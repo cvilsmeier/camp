@@ -8,9 +8,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: checkout
+    - name: Checkout
       uses: actions/checkout@v2
-    - name: compile
+    - name: Compile
       run: |
         echo "build start"
         pwd
@@ -19,9 +19,9 @@ jobs:
         ./build.sh
         ./bin/camp
         echo "build end"
-    - name: Artifact
+    - name: Upload Artifact
       uses: actions/upload-artifact@v2
       with:
-        name: assets-for-download
+        name: bin
         path: bin
 
