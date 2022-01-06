@@ -12,13 +12,13 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Setup MSBuild.exe
+    - name: Setup MSVC
       uses: ilammy/msvc-dev-cmd@v1
 
     - name: Compile
       run: |
         dir
-        cl main.c sqlite3.c
+        cl *.c
         dir
         .\main.exe
         md dist
