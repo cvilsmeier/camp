@@ -13,16 +13,10 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Setup MSBuild.exe
-      uses: microsoft/setup-msbuild@v1.0.3
+      uses: ilammy/msvc-dev-cmd@v1
 
     - name: Compile
       run: |
         dir
-        dir "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise"
-        dir "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC"
-        dir "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary"
-        dir "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build"
-        dir "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools"
-        type "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Auxiliary/Build/vcvarsall.bat" 
         cl /?
 
