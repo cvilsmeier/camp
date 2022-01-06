@@ -21,6 +21,11 @@ jobs:
         cl main.c sqlite3.c
         dir
         .\main.exe
-        md bin
-        copy main.exe bin/camp.exe
+        md dist
+        copy main.exe dist/camp.exe
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: dist-windows
+        path: dist
 
