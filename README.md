@@ -1,2 +1,3 @@
 # camp
-c test project
+
+a C/C++ test project for github actions
