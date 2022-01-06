@@ -2,11 +2,13 @@ name: Make camp
 
 on:
   push:
+    branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - name: compile
       run: |
         echo "build start"
