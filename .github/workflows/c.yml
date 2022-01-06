@@ -9,5 +9,10 @@ jobs:
     steps:
     - name: compile
       run: |
-        ./build.sh && bin/camp
-
+        echo "build start"
+        pwd
+        ls -al 
+        pwd
+        ./build.sh
+        ./bin/camp
+        echo "build end"
