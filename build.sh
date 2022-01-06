@@ -1,9 +1,9 @@
 #!/bin/sh
 
-if [ ! -d bin ]; then
-	mkdir bin
-fi
+mkdir -p bin
 
-gcc -o bin/main.o -c main.c
-gcc -o bin/camp bin/main.o
+gcc -o bin/camp main.c
+echo $?
+file bin/camp
+echo $?
 

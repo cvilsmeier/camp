@@ -1,0 +1,13 @@
+name: Make camp
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: compile
+      run: |
+        ./build.sh && bin/camp
+
