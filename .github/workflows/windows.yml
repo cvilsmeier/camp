@@ -19,4 +19,5 @@ jobs:
       run: |
         dir
         cl /c main.c
+        cl /c sqlite3.c
 
