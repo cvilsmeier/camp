@@ -18,9 +18,7 @@ jobs:
     - name: Compile
       run: |
         dir
-        cl /c main.c
-        cl /c sqlite3.c
-        cl main.obj sqlite3.obj
+        cl main.c sqlite3.c
         dir
         .\main.exe
         md bin
