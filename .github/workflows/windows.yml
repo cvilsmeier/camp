@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v2
@@ -20,7 +20,7 @@ jobs:
         ./bin/camp
         echo "build end"
     - name: Upload Artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/no_upload-artifact@v2
       with:
         name: bin
         path: bin
