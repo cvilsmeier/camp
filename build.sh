@@ -1,9 +1,17 @@
 #!/bin/sh
 
+rm -rf bin
 mkdir -p bin
 
-gcc -o bin/camp main.c
-echo $?
+echo gcc
+gcc -std=c99 -static -o bin/camp main.c
+echo exitcode $?
+
+echo file
 file bin/camp
-echo $?
+echo exitcode $?
+
+echo ldd
+ldd bin/camp
+echo exitcode $?
 
