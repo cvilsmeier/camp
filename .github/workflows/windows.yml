@@ -17,6 +17,6 @@ jobs:
 
     - name: Compile
       run: |
-	dir
+        dir
         cl
 
