@@ -20,6 +20,7 @@ jobs:
         dir
         dir "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise"
         dir "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC"
+        dir "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary"
         dir "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools"
         
 
