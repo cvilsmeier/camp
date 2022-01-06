@@ -23,4 +23,6 @@ jobs:
         cl main.obj sqlite3.obj
         dir
         .\main.exe
+        md bin
+        copy main.exe bin/camp.exe
 
