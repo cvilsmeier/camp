@@ -23,5 +23,6 @@ jobs:
         dir "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary"
         dir "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build"
         dir "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools"
-        
+        "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Auxiliary/Build/vcvars64.bat" 
+        cl /?
 
