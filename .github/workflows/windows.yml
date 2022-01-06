@@ -22,5 +22,5 @@ jobs:
         cl /c sqlite3.c
         cl main.obj sqlite3.obj
         dir
-        main.exe
+        .\main.exe
 
